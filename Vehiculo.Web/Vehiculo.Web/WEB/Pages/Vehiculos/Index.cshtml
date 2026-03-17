@@ -3,11 +3,11 @@
 @{
 }
 <h1>Listado de vehiculos</h1>
-<section class="page-section bg-light" id="principal">
+
     <div class="container">
         
         <div class="text-center mb-4">
-            <a type="button" class="btn btn-group-lg btn-success btn-lg" asp-page="./Agregar"><i class="bi bi-plus-square"></i> Agregar</a>
+            <a type="button" class="btn btn-group-lg btn-primary btn-lg" asp-page="./Agregar"><i class="bi bi-plus-square"></i> Agregar</a>
         </div>
         <div class="row">
             @if (Model.vehiculos != null)
@@ -34,4 +34,4 @@
             }
         </div>
     </div>
-</section>
+

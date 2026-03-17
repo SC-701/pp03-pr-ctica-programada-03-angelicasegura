@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
@@ -25,12 +26,13 @@ namespace Abstracciones.Modelos
         public Decimal Precio { get; set; }
         [Required(ErrorMessage = "La propiedad correo es requerida")]
         [EmailAddress]
+        [DisplayName("Correo del propietario")]
 
 
         public string CorreoPropietario { get; set; }
         [Required(ErrorMessage = "La propiedad telefono es requerida")]
         [Phone]
-
+        [DisplayName("Telefono del propietario")]
         public string TelefonoPropietario { get; set; }
 
     }
